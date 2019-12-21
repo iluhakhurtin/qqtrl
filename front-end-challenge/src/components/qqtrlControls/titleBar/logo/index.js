@@ -5,7 +5,7 @@ import logo from "./logo.svg";
 class Logo extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.container}>
         <span dangerouslySetInnerHTML={{ __html: logo }} />
       </div>
     );

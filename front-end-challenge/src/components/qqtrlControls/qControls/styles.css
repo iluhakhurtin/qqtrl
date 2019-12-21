@@ -1,4 +1,4 @@
 .container {
-  /* background-color: #faf7fc; */
-  background-color: red;
+  background-color: #faf7fc;
+  flex-grow: 1;
 }

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "./styles.css";
+import styles from "./styles.css";
 
 class Title extends Component {
   render() {
     let { title } = this.props;
-    return <div className="container">{title}</div>;
+    return <div className={styles.container}>{title}</div>;
   }
 }
 

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Logo from "./logo";
-import "./styles.css";
+import styles from "./styles.css";
 
 class TitleBar extends Component {
   render() {
     return (
-      <div className="container">
+      <div className={styles.container}>
         <Logo />
       </div>
     );

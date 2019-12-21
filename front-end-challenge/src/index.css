@@ -1,0 +1,11 @@
+html,
+body,
+section {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica", "Roboto", "Arial", sans-serif;
+  color: #6c5b72;
+}
