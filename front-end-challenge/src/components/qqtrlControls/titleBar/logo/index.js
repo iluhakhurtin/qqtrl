@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import LogoData from "./logo.svg";
+import styles from "./styles.css";
+import logo from "./logo.svg";
 
 class Logo extends Component {
   render() {
     return (
       <div>
-        <img src={LogoData} alt="logo" />
+        <span dangerouslySetInnerHTML={{ __html: logo }} />
       </div>
     );
   }

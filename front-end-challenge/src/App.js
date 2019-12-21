@@ -4,7 +4,8 @@ import QqtrlControls from "./components/qqtrlControls";
 
 class App extends Component {
   render() {
-    return <div>Hello React!</div>;
+    let { data } = ControlsData;
+    return <QqtrlControls data={data} />;
   }
 }
 
