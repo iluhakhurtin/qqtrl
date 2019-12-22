@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ControlBar from "./controlBar";
-import styles from "./styles.module.css";
+import ControlList from "./contolList";
+import styles from "./styles.qControls.module.css";
 
 class QControls extends Component {
   render() {
@@ -8,6 +9,7 @@ class QControls extends Component {
     return (
       <div className={styles.container}>
         <ControlBar title={title} />
+        <ControlList />
       </div>
     );
   }

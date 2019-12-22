@@ -1,0 +1,8 @@
+.container {
+}
+
+.header {
+  border-top: 1px solid #ece9f0;
+  border-bottom: 1px solid #ece9f0;
+  min-width: calc(73vw);
+}

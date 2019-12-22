@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Title from "./title";
 import PlusButton from "./buttons/plus";
-import styles from "./styles2.module.css";
+import styles from "./styles.controlBar.module.css";
 
 class ControlBar extends Component {
   render() {
