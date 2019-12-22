@@ -5,10 +5,12 @@ import styles from "./styles.module.css";
 
 class QqtrlControls extends Component {
   render() {
+    let { controlsData } = this.props;
+    let { data } = controlsData;
     return (
       <div className={styles.container}>
         <TitleBar />
-        <QControls />
+        <QControls controls={data} />
       </div>
     );
   }

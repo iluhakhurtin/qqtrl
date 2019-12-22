@@ -6,10 +6,11 @@ import styles from "./styles.qControls.module.css";
 class QControls extends Component {
   render() {
     let title = "Controls";
+    let { controls } = this.props;
     return (
       <div className={styles.container}>
         <ControlBar title={title} />
-        <ControlList />
+        <ControlList controls={controls} />
       </div>
     );
   }
