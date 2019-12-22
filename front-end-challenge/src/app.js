@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import ControlsData from "./data/controls.json";
 import Error from "./components/error";
+import LoadingSpinner from "./components/spinner";
 import QqtrlControls from "./components/qqtrlControls";
 import styles from "./app.module.css";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      controlsData: {},
+      isLoading: true
+    };
   }
 
   componentWillMount() {
@@ -15,47 +19,40 @@ class App extends Component {
   }
 
   getControlsData() {
-    // error on data getting emulation
-    let rnd = this.getRandomInt(2);
-    let controlsData = null;
-    if (rnd > 0) {
-      controlsData = ControlsData;
-    }
-    this.setState({ controlsData });
+    this.setState({ isLoading: true });
+    setTimeout(() => {
+      // error on data getting emulation
+      let rnd = this.getRandomInt(2);
+      let controlsData = {};
+      if (rnd > 0) {
+        controlsData = ControlsData;
+      }
+      this.setState({ controlsData, isLoading: false });
+    }, 3000);
   }
 
   getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
 
-  renderControls(controlsData) {
-    return (
-      <div className={styles.container}>
-        <QqtrlControls controls={controlsData.data} />
-      </div>
-    );
-  }
-
   onTryAgain() {
     this.getControlsData();
   }
 
-  renderError() {
+  render() {
+    let { controlsData, isLoading } = this.state;
     return (
       <div className={styles.container}>
-        <QqtrlControls controls={null} />
-        <Error
-          error="Unable to load controls"
-          onTryAgain={() => this.onTryAgain()}
-        />
+        <QqtrlControls controls={controlsData.data} />
+        {isLoading && <LoadingSpinner />}
+        {!isLoading && !controlsData.data && (
+          <Error
+            error="Unable to load controls"
+            onTryAgain={() => this.onTryAgain()}
+          />
+        )}
       </div>
     );
-  }
-
-  render() {
-    let { controlsData } = this.state;
-    if (controlsData) return this.renderControls(controlsData);
-    return this.renderError();
   }
 }
 

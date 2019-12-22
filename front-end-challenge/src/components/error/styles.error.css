@@ -6,6 +6,11 @@
   padding-bottom: 19px;
 }
 
+.error .modal-content {
+  border: 0px;
+  border-radius: 0px;
+}
+
 .error .modal-title {
   font-size: 14px;
   margin: auto;
