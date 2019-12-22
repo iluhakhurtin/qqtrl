@@ -12,7 +12,17 @@
 }
 
 .controlBar {
-  background-color: red;
+  margin-top: 33px;
   max-width: 73%;
   min-width: 1077px;
+}
+
+.titleContainer {
+  float: left;
+  margin-top: 2px;
+}
+
+.buttonsContainer {
+  float: left;
+  margin-left: 26px;
 }

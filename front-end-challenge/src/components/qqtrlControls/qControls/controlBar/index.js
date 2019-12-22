@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Title from "./title";
+import PlusButton from "./buttons/plus";
 import styles from "./styles2.module.css";
 
 class ControlBar extends Component {
@@ -13,7 +14,12 @@ class ControlBar extends Component {
             <Col xs lg="2"></Col>
             <Col md="auto">
               <div className={styles.controlBar}>
-                <Title title={title} />
+                <div className={styles.titleContainer}>
+                  <Title title={title} />
+                </div>
+                <div className={styles.buttonsContainer}>
+                  <PlusButton />
+                </div>
               </div>
             </Col>
             <Col xs lg="2"></Col>
