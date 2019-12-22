@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ControlBar from "./controlBar";
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 class QControls extends Component {
   render() {

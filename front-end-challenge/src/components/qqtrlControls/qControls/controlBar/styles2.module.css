@@ -10,3 +10,9 @@
     #faf7fc 100%
   );
 }
+
+.controlBar {
+  background-color: red;
+  max-width: 73%;
+  min-width: 1077px;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TitleBar from "./titleBar";
 import QControls from "./qControls";
-import styles from "./styles.css";
+import styles from "./styles.module.css";
 
 class QqtrlControls extends Component {
   render() {
