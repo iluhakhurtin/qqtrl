@@ -13,8 +13,7 @@
 
 .controlBar {
   margin-top: 33px;
-  max-width: 73%;
-  min-width: 1077px;
+  min-width: calc(73vw);
 }
 
 .titleContainer {

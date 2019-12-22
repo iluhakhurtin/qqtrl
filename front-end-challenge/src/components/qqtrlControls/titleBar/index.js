@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from "./logo";
-import styles from "./styles.module.css";
+import styles from "./styles2.module.css";
 
 class TitleBar extends Component {
   render() {
