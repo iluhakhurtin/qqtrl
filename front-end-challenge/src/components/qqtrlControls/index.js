@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import TitleBar from "./titleBar";
 import QControls from "./qControls";
-import styles from "./styles.module.css";
+import styles from "./styles.qqtrlControls.module.css";
 
 class QqtrlControls extends Component {
   render() {
-    let { controlsData } = this.props;
-    let { data } = controlsData;
+    let { controls } = this.props;
     return (
       <div className={styles.container}>
         <TitleBar />
-        <QControls controls={data} />
+        <QControls controls={controls} />
       </div>
     );
   }

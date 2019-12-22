@@ -9,8 +9,8 @@ class QControls extends Component {
     let { controls } = this.props;
     return (
       <div className={styles.container}>
-        <ControlBar title={title} />
-        <ControlList controls={controls} />
+        {controls && <ControlBar title={title} />}
+        {controls && <ControlList controls={controls} />}
       </div>
     );
   }

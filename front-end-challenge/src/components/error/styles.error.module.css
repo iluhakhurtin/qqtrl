@@ -1,0 +1,16 @@
+.container {
+  width: 527px;
+  height: 443px;
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 14px;
+  color: #ae9fb4;
+}
+
+.error {
+  font-size: 28px;
+  color: #6c5b72;
+}
