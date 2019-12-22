@@ -45,8 +45,8 @@ class App extends Component {
       <div className={styles.container}>
         <QqtrlControls controls={null} />
         <Error
-          title="Unable to load controls"
-          onTryAgain={() => this.onTryAgain}
+          error="Unable to load controls"
+          onTryAgain={() => this.onTryAgain()}
         />
       </div>
     );

@@ -1,6 +1,6 @@
 .container {
-  width: 527px;
-  height: 443px;
+  width: 527px !important;
+  height: 443px !important;
   font-family: "Helvetica", sans-serif;
   text-transform: uppercase;
 }
