@@ -1,6 +1,6 @@
 .container {
   height: 43px;
-  padding: 15px;
+  padding-top: 15px;
 }
 
 .title {
@@ -19,6 +19,6 @@
   width: 14%;
 }
 
-.maxRabiRate {
+.maximumRabiRate {
   float: left;
 }

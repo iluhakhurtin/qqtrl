@@ -1,0 +1,9 @@
+.container {
+  font-size: 13px;
+  color: #ae9fb4;
+  cursor: pointer;
+}
+
+.icon {
+  display: block;
+}

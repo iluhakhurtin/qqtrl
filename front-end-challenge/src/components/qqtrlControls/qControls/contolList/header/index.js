@@ -15,7 +15,7 @@ class Header extends Component {
         <div className={styles.polarAngle}>
           <Title title="polar angle" />
         </div>
-        <div className={styles.maxRabiRate}>
+        <div className={styles.maximumRabiRate}>
           <Title title="max rabi rate" />
         </div>
       </div>

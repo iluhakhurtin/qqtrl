@@ -1,0 +1,13 @@
+.container {
+  width: 70px;
+  height: 16px;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #30cd30;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
